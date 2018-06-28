@@ -1,0 +1,37 @@
+if (isModule){
+    apply plugin: 'com.android.library'
+}else{
+    apply plugin: 'com.android.application'
+}
+
+def cfg=rootProject.ext.android
+def appId=rootProject.ext.appId
+def dep=rootProject.ext.dependencies;
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    defaultConfig {
+        if (!isModule) {
+            applicationId appId["shop_car"]
+        }
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation dep["appcompat-v7"]
+    implementation project(":common")
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

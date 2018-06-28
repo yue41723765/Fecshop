@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+def cfg=rootProject.ext.android
+def appId=rootProject.ext.appId
+def dep=rootProject.ext.dependencies;
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    defaultConfig {
+        if (!isModule) {
+            applicationId appId["app"]
+        }
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dep["appcompat-v7"]
+    implementation project(":common")
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    if (isModule){
+        implementation project(":main")
+        implementation project(":shop_car")
+        implementation project(":user")
+        implementation project(":classify")
+    }
+}

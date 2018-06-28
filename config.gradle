@@ -1,0 +1,27 @@
+ext {
+    // false: 组件模式
+    // true ：集成模式
+    isModule = true
+    android = [
+            compileSdkVersion: 26,
+            minSdkVersion    : 21,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    appId = ["main"  : "com.gtjh.fecshop.main",
+             "classify"   : "com.gtjh.fecshop.classify",
+             "user"  : "com.gtjh.fecshop.user",
+             "app"   : "com.gtjh.fecshop",
+             "shop_car": "com.gtjh.fecshop.shop_car"
+    ]
+
+    supportLibrary = "27.1.1"
+    dependencies = [
+            "appcompat-v7"   : "com.android.support:appcompat-v7:${supportLibrary}",
+            "recyclerview-v7": "com.android.support:recyclerview-v7:${supportLibrary}",
+    ]
+}
+
+
