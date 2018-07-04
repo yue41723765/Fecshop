@@ -1,2 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gtjh.common" />
+    package="com.gtjh.common" >
+    <application
+        >
+        <activity android:name=".ProxyLoginActivity"
+            />
+    </application>
+</manifest>

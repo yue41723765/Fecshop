@@ -1,4 +1,4 @@
-package com.gtjh.common.app;
+package com.gtjh.common;
 
 
 import android.content.Context;
@@ -7,24 +7,32 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.gtjh.common.R;
-import com.gtjh.router_core.GTJHRouter;
+import com.githang.statusbar.StatusBarCompat;
+import com.gtjh.aop.annotation.Init;
+import com.gtjh.common.view.IBaseView;
 import com.zhy.autolayout.AutoFrameLayout;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
+
+import butterknife.ButterKnife;
 
 
 /**
  * Created by android on 2018/5/24.
  */
 
-public abstract class BaseActivity extends AppCompatActivity  {
+public abstract class BaseActivity extends AppCompatActivity implements IBaseView {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
+        ButterKnife.bind(this);
+        StatusBarCompat.setStatusBarColor(this,getResources().getColor(R.color.dialog_bg_color) );
+        init(savedInstanceState);
     }
+
+    public abstract void init(Bundle savedInstanceState);
 
     @Override
     protected void onResume() {
@@ -37,6 +45,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
         super.onPause();
 
     }
+
     private static final String LAYOUT_LINEARLAYOUT = "LinearLayout";
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
 
@@ -61,11 +70,9 @@ public abstract class BaseActivity extends AppCompatActivity  {
         return super.onCreateView(name, context, attrs);
     }
 
-    protected abstract void init(Bundle savedInstanceState);
 
     public abstract int getLayoutId();
 
-    public abstract BaseActivity getInjectObject();
 
     @Override
     protected void onDestroy() {
@@ -73,8 +80,17 @@ public abstract class BaseActivity extends AppCompatActivity  {
 
     }
 
-    public void back(View view){
+    public void back(View view) {
         finish();
     }
 
+    @Override
+    public void showDialog() {
+
+    }
+
+    @Override
+    public void hideDialog() {
+
+    }
 }
