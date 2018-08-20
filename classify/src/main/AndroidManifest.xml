@@ -1,2 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gtjh.classify" />
+    package="com.gtjh.classify" >
+    <uses-sdk android:minSdkVersion="4" />
+    <application >
+        <activity android:name=".activity.ClassifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.CommodityDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.EvaListActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
+

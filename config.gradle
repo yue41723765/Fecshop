@@ -10,17 +10,18 @@ ext {
             versionName      : "1.0.0"
     ]
 
-    appId = ["main"  : "com.gtjh.fecshop.main",
-             "classify"   : "com.gtjh.fecshop.classify",
-             "user"  : "com.gtjh.fecshop.user",
+    appId = ["main"  : "com.gtjh.main",
+             "classify"   : "com.gtjh.classify",
+             "user"  : "com.gtjh.user",
              "app"   : "com.gtjh.fecshop",
-             "shop_car": "com.gtjh.fecshop.shop_car"
+             "shop_car": "com.gtjh.shop_car"
     ]
 
     supportLibrary = "27.1.1"
     dependencies = [
             "appcompat-v7"   : "com.android.support:appcompat-v7:${supportLibrary}",
             "recyclerview-v7": "com.android.support:recyclerview-v7:${supportLibrary}",
+            "design": "com.android.support:design:${supportLibrary}",
     ]
 }
 

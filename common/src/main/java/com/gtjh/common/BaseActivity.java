@@ -2,17 +2,29 @@ package com.gtjh.common;
 
 
 import android.content.Context;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import com.githang.statusbar.StatusBarCompat;
 import com.gtjh.aop.annotation.Init;
+import com.gtjh.common.util.SPUtil;
 import com.gtjh.common.view.IBaseView;
+import com.gtjh.router_core.GTJHRouter;
 import com.zhy.autolayout.AutoFrameLayout;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
+
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.Locale;
 
 import butterknife.ButterKnife;
 
@@ -28,8 +40,10 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         ButterKnife.bind(this);
+        GTJHRouter.getInstance().inject(getInjectObject());
         StatusBarCompat.setStatusBarColor(this,getResources().getColor(R.color.dialog_bg_color) );
         init(savedInstanceState);
+        EventBus.getDefault().register(this);
     }
 
     public abstract void init(Bundle savedInstanceState);
@@ -71,13 +85,38 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     }
 
 
+
+    //切换语言
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(String str) {
+        switch (str) {
+            case "EVENT_REFRESH_LANGUAGE":
+                changeAppLanguage();
+                recreate();//刷新界面
+                break;
+        }
+    }
+
+    private void  changeAppLanguage(){
+        String sta = SPUtil.getLanguage(this);
+        if(sta != null && !"".equals(sta)){
+            // 本地语言设置
+            Locale myLocale = new Locale(sta);
+            Resources res = getResources();
+            DisplayMetrics dm = res.getDisplayMetrics();
+            Configuration conf = res.getConfiguration();
+            conf.locale = myLocale;
+            res.updateConfiguration(conf, dm);
+        }
+
+    }
     public abstract int getLayoutId();
 
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        EventBus.getDefault().unregister(this);
     }
 
     public void back(View view) {
@@ -93,4 +132,5 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     public void hideDialog() {
 
     }
+    public abstract BaseActivity getInjectObject();
 }

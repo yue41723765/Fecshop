@@ -30,4 +30,15 @@
         <item name="android:backgroundDimEnabled">true</item>
 
     </style>
+    <style name="bottomTabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">9dp</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
 </resources>

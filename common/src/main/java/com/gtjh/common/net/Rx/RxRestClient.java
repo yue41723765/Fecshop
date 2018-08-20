@@ -31,7 +31,6 @@ public class RxRestClient {
         this.URL = url;
         this.BODY = body;
         this.FILE = file;
-
     }
 
     public static RxRestClientBuilder create() {

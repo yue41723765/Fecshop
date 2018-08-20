@@ -1,5 +1,6 @@
 if (isModule){
     apply plugin: 'com.android.library'
+    apply plugin: 'com.jakewharton.butterknife'
 }else{
     apply plugin: 'com.android.application'
 }
@@ -17,6 +18,7 @@ android {
         targetSdkVersion cfg.targetSdkVersion
         versionCode cfg.versionCode
         versionName cfg.versionName
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
@@ -27,11 +29,13 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation dep["appcompat-v7"]
-    implementation project(":common")
+    implementation project(':common')
+    annotationProcessor project(":router-compiler")
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
 }

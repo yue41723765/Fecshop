@@ -1,2 +1,33 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gtjh.user" />
+    package="com.gtjh.user" >
+    <application>
+        <!--注册-->
+        <activity android:name=".RegisterActivity" android:screenOrientation="portrait"/>
+        <!--登录-->
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait"/>
+        <!--切換語言-->
+        <activity android:name=".LanguageMoneyActivty" android:screenOrientation="portrait"/>
+        <!--我的账户-->
+        <activity android:name=".AccountActivity" android:screenOrientation="portrait"/>
+        <!--更改密码-->
+        <activity android:name=".ChangePwActivity" android:screenOrientation="portrait"/>
+        <!--账户信息-->
+        <activity android:name=".activity.AccountInfoActivity" android:screenOrientation="portrait"/>
+        <!--货运地址-->
+        <activity android:name=".activity.AddressListActivity" android:screenOrientation="portrait"/>
+        <!--新建货运地址-->
+        <activity android:name=".activity.AddAddressActivity" android:screenOrientation="portrait"/>
+        <!--我的订单 列表-->
+        <activity android:name=".activity.OrderActivity" android:screenOrientation="portrait"/>
+        <!--我的订单 详情-->
+        <activity android:name=".activity.OrderDetailsActivity" android:screenOrientation="portrait"/>
+        <!--我的订单 评价-->
+        <activity android:name=".activity.EvaluationActivity" android:screenOrientation="portrait"/>
+        <!--我的收藏-->
+        <activity android:name=".activity.CollectActivity" android:screenOrientation="portrait"/>
+        <!--忘记密码-->
+        <activity android:name=".activity.ForgetActivity" android:screenOrientation="portrait"/>
+        <!--网页-->
+        <activity android:name=".activity.WebActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

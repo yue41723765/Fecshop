@@ -38,8 +38,18 @@ public class Configurator {
     }
 
 
+    //配置语言
+    public final Configurator withLanguage(String language) {
+        CONFIGS.put(ConfigKeys.LANGUAGE, language);
+        return this;
+    }
+    //配置拦截器
+    public final Configurator withInterceptor(Interceptor interceptor) {
+        CONFIGS.put(ConfigKeys.INTERCEPTOR, interceptor);
+        return this;
+    }
 
-    //配置APIHOST
+        //配置APIHOST
     public final Configurator withApiHost(String host){
         CONFIGS.put(ConfigKeys.API_HOST,host);
         return this;

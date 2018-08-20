@@ -7,18 +7,49 @@
     <LinearLayout
         android:id="@+id/ll_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100px"
         android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingTop="24px">
+        android:visibility="gone">
 
     </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:checkedButton="@+id/rb_home">
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="@string/main_name" />
+        <RadioButton
+            android:id="@+id/rb_classify"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_shop"
+            android:text="@string/classify" />
+        <RadioButton
+            android:id="@+id/rb_shoppingcar"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_houses"
+            android:text="@string/shop_cart_name" />
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_me"
+            android:text="@string/user_name" />
+    </RadioGroup>
 
     <FrameLayout
         android:id="@+id/fl_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/ll_bottom"
+        android:layout_above="@id/rg_bottom_nav"
         android:background="@drawable/vpi__tab_unselected_holo" />
 
 </RelativeLayout>

@@ -6,6 +6,8 @@ dependencies {
     implementation project(':router-annotation')
     implementation 'com.squareup:javapoet:1.7.0'
 }
-
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"

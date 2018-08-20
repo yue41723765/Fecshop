@@ -7,6 +7,7 @@ package com.gtjh.common.app;
 public enum ConfigKeys {
     API_HOST,
     APPLICATION_CONTEXT,
-    CONFIG_READY
-
+    CONFIG_READY,
+    LANGUAGE,
+    INTERCEPTOR
 }
