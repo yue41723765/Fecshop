@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="AccountEditStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/area_color</item>
+        <item name="android:layout_marginTop">19px</item>
+        <item name="android:layout_marginLeft">29px</item>
+        <item name="android:layout_marginRight">70px</item>
+    </style>
+
+
+    <style name="AccountRelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:background">@drawable/shape_pw</item>
+        <item name="android:textColor">@color/area_color</item>
+        <item name="android:layout_marginTop">40px</item>
+        <item name="android:layout_marginLeft">35px</item>
+        <item name="android:layout_marginRight">35px</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DialogOutAndInStyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+    <style name="OrderDetailsLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">117px</item>
+        <item name="android:paddingRight">37px</item>
+        <item name="android:paddingLeft">33px</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="OrderDetailsLeftTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">80px</item>
+        <item name="android:textColor">@color/text_96</item>
+        <item name="android:textSize">26px</item>
+    </style>
+    <style name="OrderDetailsRightTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/area_color</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">35px</item>
+        <item name="android:maxHeight">35px</item>
+    </style>
+
+    <style name="PickerDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--最后面是window background-->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--这个不设置它会沾满屏幕-->
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+</resources>

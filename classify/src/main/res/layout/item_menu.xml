@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vpi__tab_unselected_holo"
+    >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="6px"
+        android:layout_height="32px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9px"
+        android:layout_marginBottom="29px"
+        android:layout_marginTop="29px"
+        android:background="@drawable/shape_gray" />
+
+    <TextView
+        android:id="@+id/tv_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/line"
+        android:textColor="#000000"
+        android:textSize="30px" />
+</RelativeLayout>

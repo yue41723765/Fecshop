@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="135px">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selector_all"
+        android:layout_marginLeft="47px"
+        android:layout_marginTop="34px"
+        android:paddingRight="62px"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@id/cb_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+       android:layout_marginTop="37px"
+        android:singleLine="true"
+        android:textColor="#000000"
+        tools:text="现金支付"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_toRightOf="@id/cb_check"
+        android:layout_below="@id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:layout_marginTop="15px"
+        android:singleLine="true"
+        android:textColor="#606060"
+        tools:text="现金支付"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"
+        android:layout_marginLeft="35px"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

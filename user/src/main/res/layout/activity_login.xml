@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="34px"
+            android:text="@string/welcomeLogin"
+            android:textColor="#222222"
+            android:textSize="54px"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:text="@string/welcomeYourLogin"
+                android:textColor="#222222"
+                android:textSize="36px"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_marginLeft="11px"
+                android:layout_width="wrap_content"
+                android:scaleType="fitStart"
+                android:layout_height="28px"
+                android:src="@drawable/shop"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124px"
+            android:background="@drawable/vpi__tab_unselected_holo"
+            android:layout_marginLeft="34px"
+            android:orientation="horizontal"
+            android:layout_marginRight="34px"
+            android:layout_marginTop="75px"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/area_color"
+                android:textSize="28px"
+                android:text="@string/mail"/>
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="12*****45@163.com"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:textColorHint="#919191"
+                android:textColor="@color/area_color"
+                android:layout_marginLeft="67px"
+                android:textSize="28px"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124px"
+            android:background="@drawable/vpi__tab_unselected_holo"
+            android:layout_marginLeft="34px"
+            android:orientation="horizontal"
+            android:layout_marginRight="34px"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/area_color"
+                android:textSize="28px"
+                android:text="@string/password"/>
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="*******"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColor="@color/area_color"
+                android:layout_marginLeft="67px"
+                android:textSize="28px"
+                android:layout_weight="1"
+                android:textColorHint="#919191" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginLeft="34px"
+            android:layout_marginRight="34px"
+            android:layout_marginTop="170px"
+            android:background="@drawable/shape_222222"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="30px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="34px"
+            android:layout_marginRight="34px"
+            android:layout_marginTop="46px">
+
+            <TextView
+                android:id="@+id/tv_updatePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:text="@string/forgetPassword"
+                android:textColor="#979797"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="46px"
+                android:text="@string/register"
+                android:textColor="#979797"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_warn"
+        android:layout_width="match_parent"
+        android:layout_height="109px"
+        android:background="@color/star_color"
+        android:drawableLeft="@drawable/ic_warn"
+        android:drawablePadding="41px"
+        android:paddingLeft="35px"
+        android:gravity="center_vertical"
+        android:text="@string/loginHint"
+        android:textColor="#000"
+        android:textSize="26px"
+        android:visibility="gone"/>
+</FrameLayout>

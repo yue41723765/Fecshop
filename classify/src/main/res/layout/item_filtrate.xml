@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="52px"
+    android:layout_marginBottom="33px"
+    android:layout_marginLeft="23px"
+    android:background="@drawable/selector_filtrate"
+    android:gravity="center"
+    android:paddingLeft="53px"
+    android:paddingRight="53px"
+    android:textColor="@color/selector_filtrate"
+    android:textSize="24px"
+    tools:text="蓝色" />

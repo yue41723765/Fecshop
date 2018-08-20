@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86px"
+    android:background="@drawable/vpi__tab_unselected_holo">
+
+    <LinearLayout
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="180px"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:onClick="back"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/classify_title"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:id="@+id/view_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/common_margin">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="33px"
+                android:layout_height="31px"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

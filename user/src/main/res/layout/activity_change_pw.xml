@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:orientation="horizontal"
+        android:background="@color/bg_242"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a3a3a3"
+            android:textSize="30px"
+            android:text="@string/changePassword"
+            android:layout_marginLeft="36px"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a3a3a3"
+            android:textSize="24px"
+            android:text="@string/requirde"
+            android:layout_marginRight="36px"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:paddingLeft="27px"
+        android:background="@drawable/shape_pw"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_old_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oldPassword"
+            android:gravity="center_vertical"
+
+            />
+        <EditText
+            android:id="@+id/et_old"
+            android:layout_marginTop="19px"
+            android:layout_below="@id/tv_old_hint"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:background="@drawable/shape_write"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="24px"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:layout_marginRight="70px"
+            android:singleLine="true"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            />
+
+        <ImageView
+            android:id="@+id/iv_old"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="29px"
+            android:src="@drawable/correct"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="36px"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:paddingLeft="27px"
+        android:background="@drawable/shape_pw"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_new_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newPassword"
+            android:gravity="center_vertical"
+
+            />
+        <EditText
+            android:id="@+id/et_new"
+            android:layout_marginTop="19px"
+            android:layout_below="@id/tv_new_hint"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:background="@drawable/shape_write"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="24px"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:layout_marginRight="70px"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:singleLine="true"/>
+        <ImageView
+            android:id="@+id/iv_new"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="29px"
+            android:src="@drawable/correct"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="36px"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:paddingLeft="27px"
+        android:background="@drawable/shape_pw"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_again_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/againPassword"
+            android:gravity="center_vertical"
+
+            />
+        <EditText
+            android:id="@+id/et_again"
+            android:layout_marginTop="19px"
+            android:layout_below="@id/tv_again_hint"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:background="@drawable/shape_write"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="24px"
+            android:gravity="bottom"
+            android:inputType="textPassword"
+            android:layout_marginRight="70px"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:singleLine="true"/>
+        <ImageView
+            android:id="@+id/iv_again"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="29px"
+            android:src="@drawable/correct"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="344px"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18px"
+        android:background="#f3f3f3"
+        android:layout_alignParentBottom="true" />
+
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:button="@drawable/selector_all"
+        android:layout_marginTop="55px"
+        android:padding="30px"
+        android:layout_marginLeft="35px"/>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="167px"
+        android:layout_height="250px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cb_check"
+        android:scaleType="centerCrop"
+        tools:src="@color/area_color"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:textColor="#0a0a0a"
+        android:textSize="32px"
+        android:layout_marginTop="49px"
+        android:singleLine="true"
+        tools:text="冰韵蓝钉珠针织开衫"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_toRightOf="@id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:layout_below="@id/tv_title"
+        android:textSize="20px"
+        android:textColor="#9d9d9d"
+        android:layout_marginTop="19px"
+        tools:text="颜色：红色     尺码：L"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_toRightOf="@id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:layout_below="@id/tv_desc"
+        android:textSize="24px"
+        android:layout_marginTop="36px"
+        android:textColor="#646464"
+        tools:text="$123456" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/iv_img"
+        android:layout_marginLeft="59px"
+        android:layout_below="@id/tv_price"
+        android:layout_marginTop="43px"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_lose"
+            android:layout_width="47px"
+            android:layout_height="47px"
+            android:textColor="@color/area_color"
+            android:textSize="23px"
+            android:text="—"
+            android:gravity="center"
+            android:background="#F7F7F7"/>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="47px"
+            android:background="#F7F7F7"
+            android:layout_marginRight="2px"
+            android:layout_marginLeft="2px"
+            android:textSize="28px"
+            android:text="1"
+            android:singleLine="true"
+            android:gravity="center"
+            android:paddingLeft="43px"
+            android:paddingRight="43px"/>
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="47px"
+            android:layout_height="47px"
+            android:textColor="@color/area_color"
+            android:textSize="23px"
+            android:text="+"
+            android:gravity="center"
+            android:background="#F7F7F7"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="38px"
+            android:layout_height="35px"
+            android:layout_marginRight="49px"
+            android:src="@drawable/ic_delete_cart"/>
+    </LinearLayout>
+</RelativeLayout>

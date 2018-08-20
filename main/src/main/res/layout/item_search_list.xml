@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="22px"
+        android:layout_marginBottom="16px">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="481px"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="27px"
+            android:layout_below="@id/iv_img"
+            android:textSize="26px"
+            android:textColor="#353e47"
+            tools:text="产妇婚礼礼服"/>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="24px"
+            android:layout_below="@id/tv_title"
+            android:textColor="@color/text_100"
+            android:textSize="24px"
+            tools:text="CNY ￥365.00"
+            />
+
+        <TextView
+            android:id="@+id/tv_content_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/tv_content"
+            android:layout_marginLeft="5px"
+            android:layout_alignBottom="@id/tv_content"
+            android:textSize="22px"
+            tools:text="CNY ￥365.00"
+            android:textColor="@color/text_100"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="22px"
+        android:layout_weight="1"
+        android:layout_marginBottom="16px">
+
+        <ImageView
+            android:id="@+id/iv_img_t"
+            android:layout_width="match_parent"
+            android:layout_height="481px"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_title_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="27px"
+            android:layout_below="@id/iv_img_t"
+            android:textSize="26px"
+            android:textColor="#353e47"
+            tools:text="产妇婚礼礼服"/>
+        <TextView
+            android:id="@+id/tv_content_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="24px"
+            android:layout_below="@id/tv_title_t"
+            android:textColor="@color/text_100"
+            android:textSize="24px"
+            tools:text="CNY ￥365.00"/>
+
+        <TextView
+            android:id="@+id/tv_content_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/tv_content_t"
+            android:layout_marginLeft="5px"
+            android:layout_alignBottom="@id/tv_content_t"
+            android:textSize="22px"
+            tools:text="CNY ￥365.00"
+            android:textColor="@color/text_100"/>
+    </RelativeLayout>
+</LinearLayout>

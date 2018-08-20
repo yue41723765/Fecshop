@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:background="@color/bg_242"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_default"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_marginLeft="35px"
+            android:button="@null"
+            android:background="@drawable/selector_checked" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/area_color"
+            android:textSize="24px"
+            android:layout_marginLeft="21px"
+            android:text="@string/defaultAddress"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="95px"
+            android:gravity="right|center_vertical"
+            android:background="@color/bg_242"
+            android:textSize="24px"
+            android:textColor="#888888"
+            android:text="@string/requirde"
+            android:paddingRight="34px"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_mail"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/mail"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+                <EditText
+                    android:id="@+id/et_mail"
+                    android:layout_below="@id/tv_mail"
+                    style="@style/AccountEditStyle"
+                    tools:text="123456"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/iv_mail"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/name"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_below="@id/tv_name"
+                    style="@style/AccountEditStyle"
+                    tools:text="123456"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/iv_name"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_surname"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/surname"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+
+                <EditText
+                    android:id="@+id/et_surname"
+                    android:layout_below="@id/tv_surname"
+                    style="@style/AccountEditStyle"
+                    android:visibility="gone"
+                    tools:text="123456" />
+                <ImageView
+                    android:id="@+id/iv_surname"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/phonenumber"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_below="@id/tv_phone"
+                    style="@style/AccountEditStyle"
+                    android:visibility="gone"
+                    tools:text="123456" />
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_county"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_county"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/county"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px" />
+
+                <TextView
+                    android:id="@+id/tv_county_edit"
+                    android:layout_below="@id/tv_county"
+                    tools:text="123456"
+                    android:textSize="30px"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"
+                    android:layout_marginTop="19px" />
+                <ImageView
+                    android:id="@+id/iv_county"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/push" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_city"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/city"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px" />
+
+                <TextView
+                    android:id="@+id/tv_city_edit"
+                    android:layout_below="@id/tv_city"
+                    tools:text="123456"
+                    android:textSize="30px"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"
+                    android:layout_marginTop="19px"
+                    android:visibility="visible"/>
+                <EditText
+                    android:id="@+id/et_city_edit"
+                    android:layout_below="@id/tv_city"
+                    tools:text="123456"
+                    android:textSize="30px"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"
+                    android:layout_marginTop="19px"
+                    android:background="@null"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/iv_city"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/push" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_thecity"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_thecity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/thecity"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+
+                <EditText
+                    android:id="@+id/et_thecity"
+                    android:layout_below="@id/tv_thecity"
+                    style="@style/AccountEditStyle"
+                    android:visibility="gone"
+                    tools:text="123456" />
+                <ImageView
+                    android:id="@+id/iv_thecity"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/street1"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_below="@id/tv_address"
+                    style="@style/AccountEditStyle"
+                    android:visibility="gone"
+                    tools:text="123456" />
+                <ImageView
+                    android:id="@+id/iv_address"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_address_t"
+                style="@style/AccountRelativeLayoutStyle">
+                <TextView
+                    android:id="@+id/tv_address_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/street2"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+
+                <EditText
+                    android:id="@+id/et_address_t"
+                    android:layout_below="@id/tv_address_t"
+                    style="@style/AccountEditStyle"
+                    android:visibility="gone"
+                    tools:text="123456" />
+                <ImageView
+                    android:id="@+id/iv_address_t"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_postal"
+                style="@style/AccountRelativeLayoutStyle"
+                android:layout_marginBottom="40px">
+                <TextView
+                    android:id="@+id/tv_postal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="#888888"
+                    android:text="@string/postal"
+                    android:layout_marginRight="70px"
+                    android:layout_marginLeft="29px"/>
+
+                <EditText
+                    android:id="@+id/et_postal"
+                    android:layout_below="@id/tv_postal"
+                    style="@style/AccountEditStyle"
+                    android:visibility="gone"
+                    tools:text="123456" />
+                <ImageView
+                    android:id="@+id/iv_postal"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29px"
+                    android:src="@drawable/correct"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

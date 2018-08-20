@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="83px"
+        android:background="@drawable/vpi__tab_unselected_holo">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="52px"
+            android:layout_height="match_parent"
+            android:paddingLeft="36px"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="标题"
+            android:lines="1"
+            android:gravity="center"
+            android:textColor="@color/area_color"
+            android:textSize="30px"/>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

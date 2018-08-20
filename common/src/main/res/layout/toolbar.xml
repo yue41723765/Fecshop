@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+  >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/vpi__tab_unselected_holo">
+
+        <LinearLayout
+            android:onClick="back"
+            android:id="@+id/ll_back"
+            android:layout_width="50dp"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20px"
+                android:layout_height="32px"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:src="@drawable/back_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/area_color"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:paddingEnd="35px"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

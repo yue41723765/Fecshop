@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_hint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:textColor="#000"
+        android:text="@string/emptyOrder"/>
+    <TextView
+        android:layout_marginTop="38px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22px"
+        android:textColor="#000"
+        android:text="@string/publicty"/>
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="218px"
+        android:layout_height="56px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/shape_order"
+        android:textSize="22px"
+        android:textColor="#000"
+        android:text="@string/rightAway"
+        android:gravity="center"/>
+
+</LinearLayout>

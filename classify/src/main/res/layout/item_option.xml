@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25px"
+    android:layout_marginBottom="10px"
+    android:gravity="center">
+
+    <!--名字没有对应 嘿嘿开心-->
+
+    <CheckBox
+        android:id="@+id/cb_checked"
+        android:layout_width="match_parent"
+        android:layout_margin="2px"
+        android:layout_height="52px"
+        android:gravity="center"
+        android:background="@drawable/selector_options"
+        android:textColor="@color/selector_option"
+        android:textSize="24px"
+        android:button="@null"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        tools:text="123456"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="62px"
+        android:layout_height="62px"
+        android:padding="1px"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+</LinearLayout>

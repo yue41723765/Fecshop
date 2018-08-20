@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray">#7F7F7F</color>
+    <color name="area_color">#000</color>
+    <color name="blue">#508CEE</color>
+    <color name="red">#FF0000</color>
+    <color name="red2">#EB545D</color>
+    <color name="red_239">#ef4b4c</color>
+    <color name="dialog_bg_color">#7f000000</color>
+    <color name="white">#fff</color>
+    <color name="bg_242">#f2f2f2</color>
+    <color name="text_163">#a3a3a3</color>
+    <color name="text_193">#C2C1C1</color>
+    <color name="text_118">#767676</color>
+    <color name="text_117">#757575</color>
+    <color name="text_122">#7a7a7a</color>
+    <color name="text_145">#919191</color>
+    <color name="text_96">#606060</color>
+    <color name="text_100">#646464</color>
+    <color name="text_162">#A2A2A2</color>
+    <color name="text_34">#222222</color>
+    <color name="text_181">#B5B5B5</color>
+    <color name="bg_gray">#c36b6b6b</color>
+
+    <color name="star_color">#f6d704</color>
+    <color name="bg_text_color">#f5f5f5</color>
+
+    <color name="green_less">#9c90ee90</color>
+    <color name="green_dark">#32cd32</color>
+</resources>

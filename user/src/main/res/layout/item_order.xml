@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="284px"
+    android:layout_marginTop="18px"
+    android:id="@+id/ll_all"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:orientation="horizontal"
+        android:paddingRight="13px"
+        android:paddingLeft="33px"
+        android:gravity="center_vertical"
+        android:background="@drawable/vpi__tab_unselected_holo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:textColor="#000"
+            android:text="@string/orderId"/>
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_118"
+            android:textSize="24px"
+            android:layout_marginLeft="57px"
+            tools:text="1100000042"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="39px"
+            android:background="#4C4C4C"
+            android:textColor="@color/white"
+            android:textSize="22px"
+            tools:text="待支付"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:singleLine="true"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="33px"
+        android:layout_marginRight="33px"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24px"
+            android:textColor="#000"
+            android:text="@string/date"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24px"
+            android:textColor="#000"
+            android:text="@string/operation"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="33px"
+        android:layout_marginLeft="33px"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24px"
+            android:textColor="@color/text_118"
+            tools:text="2018-06-13 14:42:13"
+            android:paddingRight="10px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingRight="10px"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toview_order"
+                android:textColor="#4C4C4C"
+                android:textSize="24px"/>
+            <View
+                android:layout_width="2px"
+                android:layout_height="27px"
+                android:background="#4C4C4C"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"/>
+            <TextView
+                android:id="@+id/tv_order_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:textColor="#4C4C4C"
+                android:text="@string/again_order"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

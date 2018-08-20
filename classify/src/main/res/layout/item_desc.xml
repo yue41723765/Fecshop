@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!--适配 根据宽度 改变高度-->
+    <com.gtjh.common.view.AutoHeightImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="82px"
+        android:layout_marginRight="82px" >
+    </com.gtjh.common.view.AutoHeightImageView>
+</LinearLayout>

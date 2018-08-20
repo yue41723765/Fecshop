@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="720px"
+    android:padding="34px">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:textColor="#222222"
+        android:text="支付方式："/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="24px"
+        android:layout_marginTop="37px"
+        android:text="FECSHOP.com 接受\n贝宝，信用卡，西联汇款和电汇作为安全支付方式"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="74px"
+        android:layout_marginTop="36px"
+        android:src="@drawable/pay_two"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="24px"
+        android:layout_marginTop="14px"
+        android:text="（1）登录到您的帐户或使用信用卡。\n
+（2）输入您的信用卡详情，订单将发送到您的贝宝地址。 然后点击“提交”。\n
+（3）您的付款将被处理，并且收据将发送到您的电子邮件收件箱。"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="76px"
+        android:layout_marginTop="35px"
+        android:src="@drawable/pay_one"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:layout_marginTop="12px"
+        android:textColor="#000000"
+        android:text="（1）选择您的送货地址或创建一个新的。\n
+（2）输入您的信用卡详细信息，然后单击“提交”。\n
+（3）您的付款将被处理，并且收据将发送到您的电子邮件收件箱。"/>
+</LinearLayout>

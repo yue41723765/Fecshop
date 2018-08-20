@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40px">
+
+               <TextView
+                   android:id="@+id/tv_jingxuanTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_marginRight="26px"
+                   android:text="@string/allClassify"
+                   android:textColor="#4E4E4E"
+                   android:textSize="38px"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="1px"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBottom="@+id/tv_jingxuanTitle"
+                   android:layout_alignTop="@+id/tv_jingxuanTitle"
+                   android:layout_marginRight="26px"
+                   android:layout_toRightOf="@+id/tv_jingxuanTitle"
+                   android:background="#4E4E4E" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="49px"
+                   android:layout_marginRight="26px"
+                   android:layout_toRightOf="@+id/tv_jingxuanTitle"
+                   android:text="GATEGORY"
+                   android:textColor="#4E4E4E"
+                   android:textSize="24px"
+                   android:textStyle="bold" />
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="60px"
+               android:orientation="horizontal">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_navigation"
+                   android:layout_width="170px"
+                   android:overScrollMode="never"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="25px"
+                   android:layout_marginRight="25px" />
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_data"
+                   android:overScrollMode="never"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="25px"
+                   android:layout_marginRight="25px" />
+           </LinearLayout>
+       </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

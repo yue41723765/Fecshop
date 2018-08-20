@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:background="#F5F5F5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34px"
+                    android:layout_marginRight="34px"
+                    android:layout_marginTop="60px"
+                    android:gravity="center"
+                    android:text="@string/notLogin"
+                    android:textColor="#000"
+                    android:textSize="33px" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btn_register"
+                    android:layout_width="316px"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="34px"
+                    android:layout_marginTop="199px"
+                    android:background="@drawable/shape_e6e6e6"
+                    android:text="@string/creatAccount"
+                    android:textColor="#000"
+                    android:textSize="33px" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btn_login"
+                    android:layout_width="316px"
+                    android:layout_height="100px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/btn_register"
+                    android:layout_marginLeft="34px"
+                    android:layout_marginRight="34px"
+                    android:background="@drawable/shape_222222"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="56px"
+                    android:textSize="33px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="34px"
+                android:layout_marginTop="59px"
+                android:src="@drawable/shop" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:drawableRight="@drawable/more"
+                android:paddingBottom="29px"
+                android:text="@string/myAccount"
+                android:textColor="#000"
+                android:textSize="33px" />
+
+            <TextView
+                android:id="@+id/tv_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="34px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:drawableRight="@drawable/more"
+                android:paddingBottom="29px"
+                android:text="@string/myOrder"
+                android:textColor="#000"
+                android:textSize="33px" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="34px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:drawableRight="@drawable/more"
+                android:paddingBottom="29px"
+                android:text="@string/myCollect"
+                android:textColor="#000"
+                android:textSize="33px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="65px"
+                android:text="@string/languageAndCurrency"
+                android:textColor="#000"
+                android:textSize="36px"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="49px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:paddingBottom="29px">
+
+                <TextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中文"
+                    android:textColor="#000"
+                    android:textSize="33px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="36px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:paddingBottom="29px">
+
+
+                <TextView
+                    android:id="@+id/tv_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中文"
+                    android:textColor="#000"
+                    android:textSize="33px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginTop="28px"
+                android:text="@string/languageHint"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="61px"
+                android:text="@string/faq"
+                android:textColor="#000"
+                android:textSize="36px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="60px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:drawableRight="@drawable/more"
+                android:paddingBottom="29px"
+                android:text="@string/aboutUs"
+                android:textColor="#000"
+                android:textSize="33px" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="34px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:drawableRight="@drawable/more"
+                android:paddingBottom="29px"
+                android:text="@string/contactUs"
+                android:textColor="#000"
+                android:textSize="33px" />
+
+            <TextView
+                android:id="@+id/tv_clause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="34px"
+                android:layout_marginTop="34px"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:drawableRight="@drawable/more"
+                android:paddingBottom="29px"
+                android:text="@string/clause"
+                android:textColor="#000"
+                android:textSize="33px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="57px"
+                android:gravity="center"
+                android:text="@string/statement"
+                android:textColor="#676767"
+                android:textSize="20px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="64px"
+                android:layout_marginTop="61px"
+                android:src="@drawable/bottom" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

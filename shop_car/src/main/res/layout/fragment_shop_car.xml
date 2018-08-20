@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="83px"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30px"
+        android:text="@string/shop_cart"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/common_margin"
+            android:layout_marginLeft="20px"
+            android:text="@string/checkAll"
+            android:button="@drawable/selector_all"
+            android:textColor="#3D4447"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="213px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#222222"
+            android:gravity="center"
+            android:text="@string/settle"
+            android:textColor="@android:color/white"
+            android:textSize="34px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21px"
+            android:layout_toLeftOf="@+id/tv_pay"
+            android:layout_toRightOf="@id/all">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxWidth="260px"
+                android:minWidth="120px"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_money"
+                android:text="@string/amount"
+                android:gravity="center"
+                android:textColor="#919191"
+                android:layout_alignBottom="@id/tv_money"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/tv_shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/tv_money"
+                android:layout_below="@id/tv_money"
+                android:text="@string/notShipping"
+                android:layout_marginTop="10px"
+                android:textColor="#919191"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+            android:layout_below="@id/tv_title"
+            android:layout_above="@id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3f3f3">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <LinearLayout
+                android:id="@+id/ll_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="116px"
+                    android:layout_height="90px"
+                    android:src="@drawable/car_empty"/>
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="30px"
+                    android:layout_marginTop="60px"
+                    android:text="@string/emptyCart" />
+            </LinearLayout>
+
+        </FrameLayout>
+</RelativeLayout>
